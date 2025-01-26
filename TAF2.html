@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TAF2</title>
+  <style>
+    .grid {
+      display: grid;
+      gap: 10px;
+      grid-template-columns: repeat(12, 1fr);
+      grid-template-rows: repeat(6, auto);
+      width: 100%;
+    }
+
+    .grid-item {
+      background-color: rgb(255, 140, 230);
+      border: 3px solid rgb(255, 100, 230);
+      color: rgb(255, 220, 230);
+      border-radius: 10px;
+      text-align: center;
+      padding: 20px;
+      font-size: 30px;
+    }
+
+    .R21,
+    .R22,
+    .R23,
+    .R24,
+    .R25,
+    .R26 {
+      grid-column: span 2;
+    }
+
+    .R31,
+    .R32,
+    .R33,
+    .R34 {
+      grid-column: span 3;
+    }
+
+    .R41,
+    .R42,
+    .R43 {
+      grid-column: span 4;
+    }
+
+    .R51,
+    .R52 {
+      grid-column: span 6;
+    }
+
+    .R61 {
+      grid-column: span 12;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="grid">
+    <div class="grid-item">1</div>
+    <div class="grid-item">2</div>
+    <div class="grid-item">3</div>
+    <div class="grid-item">4</div>
+    <div class="grid-item">5</div>
+    <div class="grid-item">6</div>
+    <div class="grid-item">7</div>
+    <div class="grid-item">8</div>
+    <div class="grid-item">9</div>
+    <div class="grid-item">10</div>
+    <div class="grid-item">11</div>
+    <div class="grid-item">12</div>
+    <div class="grid-item R21">1</div>
+    <div class="grid-item R22">2</div>
+    <div class="grid-item R23">3</div>
+    <div class="grid-item R24">4</div>
+    <div class="grid-item R25">5</div>
+    <div class="grid-item R26">6</div>
+    <div class="grid-item R31">1</div>
+    <div class="grid-item R32">2</div>
+    <div class="grid-item R33">3</div>
+    <div class="grid-item R34">4</div>
+    <div class="grid-item R41">1</div>
+    <div class="grid-item R42">2</div>
+    <div class="grid-item R43">3</div>
+    <div class="grid-item R51">1</div>
+    <div class="grid-item R52">2</div>
+    <div class="grid-item R61">1</div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TAF1</title>
+  <style>
+    body {
+      background-color: rgb(245, 245, 245);
+    }
+
+    @media (min-width: 1110px) {
+      .sub-container2 {
+        width: 25%;
+      }
+    }
+
+    @media (max-width: 910px) and (min-width: 100px) {
+      .sub-container2 {
+        width: 50%;
+      }
+    }
+
+    @media (max-width: 100px) {
+      .sub-container2 {
+        width: 100%;
+      }
+    }
+
+    .container1 {
+      display: flex;
+      justify-content: space-between;
+      margin: 20px;
+      align-items: center;
+      width: 100%;
+    }
+
+    .sub-container1 {
+      display: flex;
+      justify-content: flex-end;
+      margin: 20px;
+      align-items: center;
+    }
+
+    .header {
+      font-size: 30px;
+    }
+
+    .sub-container1>div {
+      margin: 0px 10px;
+      font-size: 10px;
+      line-height: 20px;
+    }
+
+    select {
+      background-color: rgb(230, 230, 230);
+      width: 100px;
+    }
+
+    .container2 {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .sub-container2 {
+      background-color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .title,
+    .price {
+      text-align: center;
+      margin: 10px;
+      font-size: 20px;
+    }
+
+    .title {
+      font-weight: bold;
+    }
+
+    .price {
+      color: gray;
+    }
+
+    img {
+      width: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container1">
+    <div class="header">Jackets</div>
+    <div class="sub-container1">
+      <div>
+        FILTER BY: <br>
+        <select name="filter" id="filter">
+          <option value="jackets">All Jackets</option>
+          <option value="pants">All Pants</option>
+          <option value="shirts">All T-shirts</option>
+          <option value="shoes">All Shoes</option>
+        </select>
+      </div>
+      <div>
+        SORT BY: <br>
+        <select name="sort" id="sort">
+          <option value="featured">Featured</option>
+          <option value="newest">Newest</option>
+          <option value="name">Name</option>
+          <option value="oldest">Oldest</option>
+        </select>
+      </div>
+    </div>
+  </div>
+  <div class="container2">
+    <div class="sub-container2">
+      <img src="WinterJacket.png" alt="WinterJacket">
+      <div class="title">
+        Winter Jacket
+      </div>
+      <div class="price">
+        $ 99.99
+      </div>
+    </div>
+    <div class="sub-container2">
+      <img src="WinterJacket.png" alt="WinterJacket">
+      <div class="title">
+        Winter Jacket
+      </div>
+      <div class="price">
+        $ 99.99
+      </div>
+    </div>
+    <div class="sub-container2">
+      <img src="WinterJacket.png" alt="WinterJacket">
+      <div class="title">
+        Winter Jacket
+      </div>
+      <div class="price">
+        $ 99.99
+      </div>
+    </div>
+    <div class="sub-container2">
+      <img src="WinterJacket.png" alt="WinterJacket">
+      <div class="title">
+        Winter Jacket
+      </div>
+      <div class="price">
+        $ 99.99
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
